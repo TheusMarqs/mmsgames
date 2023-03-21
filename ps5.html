@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MMS Games</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleps5.css">
+    <link rel="icon" href="img/logorodape.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/80cf878bfd.js" crossorigin="anonymous"></script>
+
+    <script>
+        function rolar(elemento) {
+            $('html, body').animate({
+                scrollTop: $(elemento).offset().top
+            }, 2000);
+        }
+
+        $('#meuModal').on('shown.bs.modal', function() {
+            $('#meuInput').trigger('focus');
+        });
+
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        function inscrever() {
+            var email = document.getElementById("mail").value;
+            var confirmar = confirm(email + "   o e-mail digitado está correto?");
+            switch (confirmar) {
+                case true:
+                    alert('E-mail cadastrado com sucesso!');
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body style="background-color: rgb(233, 233, 233);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <a href="index.html">
+                    <img src="img/logotopo.png" style="width: 180px; height: 180px;">
+                </a>
+            </div>
+            <div class="col-md-9">
+                <a class="navbar-brand" href="index.html">
+                    <h1 style="color: #181818; margin-top: 70px; margin-left: 30px; font-family: 'Newsreader', serif; font-size: 38px;">
+                        Proporcionando entretenimento ao povo brasileiro!</h1>
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" style="margin-bottom: 10px;">
+            <div class="col-md-12">
+                <!--navbar-->
+                <nav class="navbar navbar-dark" style="background-color: #181818; border-radius: 5em; height: 48px;">
+                    <div id="navbarbuttons">
+                        <a id="navbtn1" class="navbar-brand" href="index.html" data-toggle="tooltip" data-placement="top" title="Ir para a home">Página principal</a>
+                        <a id="navbtn2" class="navbar-brand" href="ps4.html" data-toggle="tooltip" data-placement="top" title="Jogos para Ps4">Ps4</a>
+                        <a id="navbtn3" class="navbar-brand" href="ps5.html">Ps5</a>
+                        <a id="navbtn4" class="navbar-brand" href="xone.html" data-toggle="tooltip" data-placement="top" title="Jogos para Xbox One">XboxOne</a>
+                        <a id="navbtn5" class="navbar-brand" href="xseriesx.html" data-toggle="tooltip" data-placement="top" title="Jogos para Xbos series X">XboxSeriesX</a>
+                    </div>
+                    <div id="icones">
+                        <a href="https://web.whatsapp.com/send?phone=5511942528100" data-toggle="tooltip" data-placement="bottom" title="Mandar mensagem por whatsapp para a equipe da página" target="blank">
+                            <i id="inav1" class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#">
+                            <i id="inav2" class="fab fa-instagram" data-toggle="tooltip" data-placement="bottom" title="Conferir nosso instagram"></i>
+                        </a>
+                        <a href="mailto:matheusmarqsilva@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Mandar um e-mail para a equipe da página" target="blank">
+                            <i id="inav3" class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-6" style="margin:auto;">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="border-radius: 2em; background-color: #282828;">
+                        <li class="breadcrumb-item" style="margin-left: 30px;"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" style="color: silver;" aria-current="page">Ps5</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="jumbotron" style="height: 340px; background-color: whitesmoke;">
+                    <h1 class="display-4" style="margin-top: -47px; font-size: 33px;">Bem vindo à nossa loja de jogos de Ps5!</h1>
+                    <p class="lead">Aqui você poderá conferir uma vasta lista de jogos de PlayStation 5, com games de todos os tipos, sempre com os melhores preços.
+                    </p>
+                    <hr class="my-4">
+                    <p>Em nossa <strong>barra de navegação</strong> localizada no topo da página, você poderá se localizar melhor diante de tudo isso, aproveite!
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <ul class="list-group">
+                    <li class="list-group-item">Lista dos Jogos de PlayStation 5 mais vendidos da MMS Games</li>
+
+                    <li class="list-group-item" style="background-color: rgb(102, 178, 240); color: darkblue;">Fifa 21 - mais de 31 mil cópias vendidas</li>
+                    <li class="list-group-item" style="background-color: rgb(102, 178, 240); color: darkblue;">Call of Duty Black Ops Cold War - mais de 27 mil cópias vendidas</li>
+                    <li class="list-group-item" style="background-color: rgb(102, 178, 240); color: darkblue;">Spider Man Miles Morales - mais de 23 mil cópias vendidas</li>
+                    <li class="list-group-item" style="background-color: rgb(102, 178, 240); color: darkblue;">Demon's Souls - mais de 17 mil cópias vendidas</li>
+                    <li class="list-group-item" style="background-color: rgb(102, 178, 240); color: darkblue;">Mortal Kombat 11 Ultimate - mais de 11 mil cópias vendidas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row ml-4 mb-5">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/ps5-1.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">MARVEL SPIDER-MAN MILES MORALES - PS5</h5>
+                        <p class="card-text">R$229,90 <br> 3x R$76,63 sem juros <br> ou R$218,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/ps5-2.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">SACKBOY UMA GRANDE AVENTURA - PS5</h5>
+                        <p class="card-text">R$299,90 <br> 3x R$99,97 sem juros <br> ou R$284,91 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/ps5-3.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body"><br>
+                        <h5 class="card-title">DEMONS SOULS - PS5</h5>
+                        <p class="card-text">R$349,90 <br> 3x R$116,63 sem juros <br> ou R$332,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ml-4 mb-5">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/ps5-4.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">RESIDENT EVIL VILLAGE - PS5</h5>
+                        <p class="card-text">R$359,90 <br> 3x R$119,97 sem juros<br> ou R$341,91 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="img/ps5-5.jpg" style="height: 285px; width: 250px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">FIFA 21 - PS5</h5>
+                        <p class="card-text">R$299,90 <br> 3x R$99,96 sem juros <br> ou R$279,90 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="img/ps5-6.jpg" style="height: 285px; width: 227px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">RETURNAL - PS5</h5>
+                        <p class="card-text">R$309,90 <br> 3x R$102,63 sem juros <br> ou R$280,91 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ml-4 mb-5">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="https://images.tcdn.com.br/img/img_prod/906426/far_cry_6_pre_venda_ps5_12130_1_1aa7d613e79bdc0eb720cd116d5a33a1.jpg" style="width: 220px; height: 285px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">FAR CRY 6 (PRÉ VENDA) - PS5</h5>
+                        <p class="card-text">R$360,90 <br> 3x R$120,30 sem juros <br> ou R$330,40 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRVR5vLh595iJI2lVFCOKgPp4CP2PNBy44I1tmNp72ZiQQvAJ5C8fPmHEAeDfbeF07uyLuHfzla0wyOTLIrt-nbKdM7EWCs7A&amp" style="width: 235px; height: 286px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">MORTAL KOMBAT 11 ULTIMATE - PS5</h5>
+                        <p class="card-text">R$332,90 <br> 3x R$110,96 sem juros <br> ou R$319,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="img/ps5-7.jpg" style="height: 285px; width: 227px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">NIOH COLLECTION - PS5</h5>
+                        <p class="card-text">R$269,90 <br> 3x R$89,96 sem juros <br> ou R$239,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ml-4 mb-5">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="img/ps5-8.jpg" style="height: 300px; width: 244px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">CALL OF DUTY BLACK OPS COLD WAR - PS5</h5>
+                        <p class="card-text">R$331,90 <br> 3x R$110,63 sem juros <br> ou R$313,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="img/ps5-9.jpg" style="height: 300px; width: 227px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">RATCHET & CLANK - PS5</h5>
+                        <p class="card-text">R$299,90 <br> 3x R$99,96 sem juros <br> ou R$269,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="https://images.tcdn.com.br/img/img_prod/906426/tony_hawk_s_pro_skater_1_2_ps5_13507_1_523b87793fbdd16d121a9fa558057163.jpg" style="height: 300px; width: 227px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">TONY HAWK'S PRO SKATER 1 + 2 - PS5</h5>
+                        <p class="card-text">R$398,90 <br> 3x R$132,96 sem juros <br> ou R$368,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar fixed-bottom navbar-dark" style="background-color: #282828; height: 40px;">
+        <div id="iconesrodape" style="float: left; margin-left: 30px;">
+            <a href="https://web.whatsapp.com/send?phone=5511942528100" target="blank">
+                <i id="irodape1" class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#">
+                <i id="irodape2" class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:matheusmarqsilva@gmail.com" target="blank">
+                <i id="irodape3" class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <a href="javascript:void(0)" onclick="rolar('#rodape')"><i style="font-size: 25px;
+            color: whitesmoke; margin-left: -635px;" class="fas fa-arrow-down"></i></a>
+    </nav>
+
+    <nav id="rodape" class="navbar navbar-dark" style="background-color:#282828; height: 300px;">
+        <img id="logorodape" src="img/logorodape.png">
+
+        <div id="textorodape">
+            <p>Nós aqui da MMS Games, desenvolvemos esse website com o intuito de vender games novos e seminovos para o Brasil inteiro, sempre com os melhores preços do mercado</p>
+        </div>
+        <div style="background-color: #282828; width: 400px;">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" style="color: white; margin-bottom: 20px; font-family: 'Montserrat';">Inscreva-se aqui para receber e-mails sempre que houver promoções ou lançamentos de games aqui no site!</label>
+                    <input type="email" class="form-control" style="width: 350px;" id="mail" aria-describedby="emailHelp" placeholder="Seu email" required>
+                    <button type="submit" onclick="inscrever()" class="btn" style="width: 350px; margin-top: 20px; background-color: #181818; color: white;">Inscrever</button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

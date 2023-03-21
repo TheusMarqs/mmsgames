@@ -1,0 +1,136 @@
+#inav1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    color: whitesmoke;
+}
+
+#inav2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    color: whitesmoke;
+}
+
+#inav3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    color: whitesmoke;
+}
+
+#irodape1 {
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+
+#irodape2 {
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+
+#irodape3 {
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+
+#inav1:hover {
+    color: steelblue;
+}
+
+#inav2:hover {
+    color: steelblue;
+}
+
+#inav3:hover {
+    color: steelblue;
+}
+
+#icones {
+    margin-right: 30px;
+    padding: 0;
+    float: right;
+}
+
+#navbarbuttons {
+    font-family: 'Montserrat';
+    color: white;
+    float: left;
+    margin-left: 30px;
+}
+
+#navbtn1 {
+    margin-left: 24px;
+    margin-bottom: 5px;
+}
+
+#navbtn2 {
+    margin-left: 24px;
+    margin-bottom: 5px;
+}
+
+#navbtn3 {
+    margin-left: 24px;
+    margin-bottom: 5px;
+}
+
+#navbtn4 {
+    margin-left: 24px;
+    margin-bottom: 5px;
+}
+
+#navbtn5 {
+    margin-left: 24px;
+    margin-bottom: 5px;
+}
+
+#navbtn1:hover {
+    color: steelblue;
+}
+
+#navbtn2:hover {
+    color: steelblue;
+}
+
+#navbtn3:hover {
+    color: steelblue;
+}
+
+#navbtn4:hover {
+    color: steelblue;
+}
+
+#navbtn5:hover {
+    color: steelblue;
+}
+
+#textorodape {
+    color: white;
+    margin: 0 auto;
+    margin-right: 30px;
+    margin-top: 80px;
+    width: 500px;
+    height: 200px;
+    background-color: #282828;
+    font-family: 'Montserrat';
+}
+
+.card-title {
+    color: black;
+    font-family: 'Newsreader', serif;
+}
+
+#logorodape {
+    margin-left: 20px;
+    width: 240px;
+    height: 240px;
+}
+
+.card-body {
+    text-align: center;
+    font-family: 'Montserrat';
+    color: darkblue;
+}

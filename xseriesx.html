@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MMS Games</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylexsx.css">
+    <link rel="icon" href="img/logorodape.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/80cf878bfd.js" crossorigin="anonymous"></script>
+
+    <script>
+        function rolar(elemento) {
+            $('html, body').animate({
+                scrollTop: $(elemento).offset().top
+            }, 2000);
+        }
+
+        $('#meuModal').on('shown.bs.modal', function() {
+            $('#meuInput').trigger('focus');
+        });
+
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        function inscrever() {
+            var email = document.getElementById("mail").value;
+            var confirmar = confirm(email + "   o e-mail digitado está correto?");
+            switch (confirmar) {
+                case true:
+                    alert('E-mail cadastrado com sucesso!');
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body style="background-color: rgb(233, 233, 233);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <a href="index.html">
+                    <img src="img/logotopo.png">
+                </a>
+            </div>
+            <div class="col-md-9">
+                <a class="navbar-brand" href="index.html">
+                    <h1 style="color: #181818; margin-top: 70px; margin-left: 30px; font-family: 'Newsreader', serif; font-size: 38px;">
+                        Proporcionando entretenimento ao povo brasileiro!</h1>
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" style="margin-bottom: 10px;">
+            <div class="col-md-12">
+                <!--navbar-->
+                <nav class="navbar navbar-dark" style="background-color: #181818; border-radius: 5em; height: 48px;">
+                    <div id="navbarbuttons">
+                        <a id="navbtn1" class="navbar-brand" href="index.html" data-toggle="tooltip" data-placement="top" title="Ir para a home">Página principal</a>
+                        <a id="navbtn2" class="navbar-brand" href="ps4.html" data-toggle="tooltip" data-placement="top" title="Jogos para Ps4">Ps4</a>
+                        <a id="navbtn3" class="navbar-brand" href="ps5.html" data-toggle="tooltip" data-placement="top" title="Jogos para Ps5">Ps5</a>
+                        <a id="navbtn4" class="navbar-brand" href="xone.html" data-toggle="tooltip" data-placement="top" title="Jogos para Xbox One">XboxOne</a>
+                        <a id="navbtn5" class="navbar-brand" href="xseriesx.html">XboxSeriesX</a>
+                    </div>
+                    <div id="icones">
+                        <a href="https://web.whatsapp.com/send?phone=5511942528100" data-toggle="tooltip" data-placement="bottom" title="Mandar mensagem por whatsapp para a equipe da página" target="blank">
+                            <i id="inav1" class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#">
+                            <i id="inav2" class="fab fa-instagram" data-toggle="tooltip" data-placement="bottom" title="Conferir nosso instagram"></i>
+                        </a>
+                        <a href="mailto:matheusmarqsilva@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Mandar um e-mail para a equipe da página" target="blank">
+                            <i id="inav3" class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-6" style="margin:auto;">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="border-radius: 2em; background-color: #282828;">
+                        <li class="breadcrumb-item" style="margin-left: 30px;"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" style="color: silver;" aria-current="page">XboxSeriesX</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="jumbotron" style="height: 340px; background-color: whitesmoke;">
+                    <h1 class="display-4" style="margin-top: -47px; font-size: 33px;">Bem vindo à nossa loja de jogos de Xbox Series X!</h1>
+                    <p class="lead">Aqui você poderá conferir uma vasta lista de jogos de Xbox Series X, com games de todos os tipos, sempre com os melhores preços.
+                    </p>
+                    <hr class="my-4">
+                    <p>Em nossa <strong>barra de navegação</strong> localizada no topo da página, você poderá se localizar melhor diante de tudo isso, aproveite!
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <ul class="list-group">
+                    <li class="list-group-item">Lista dos Jogos de Xbox Series X mais vendidos da MMS Games</li>
+
+                    <li class="list-group-item" style="background-color: #71c9ac; color: darkgreen;">Fifa 21 - mais de 29 mil cópias vendidas</li>
+                    <li class="list-group-item" style="background-color: #71c9ac; color: darkgreen;">Call Of Duty Black Ops Cold War - mais de 25 mil cópias vendidas</li>
+                    <li class="list-group-item" style="background-color: #71c9ac; color: darkgreen;">Assassin's Creed Valhalla - mais de 21 mil cópias vendidas</li>
+                    <li class="list-group-item" style="background-color: #71c9ac; color: darkgreen;">Watch Dogs Legion - mais de 17 mil cópias vendidas</li>
+                    <li class="list-group-item" style="background-color: #71c9ac; color: darkgreen;">Mortal Kombat 11 Ultimate - mais de 13 mil cópias vendidas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row ml-4 mb-5">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/xsx1.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">RESIDENT EVIL VILLAGE - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$289,90 <br> 3x R$96,63 sem juros <br> ou R$275,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/xsx2.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">FARCRY 6 (PRÉ VENDA) - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$360,90<br> 3x R$120,30 sem juros <br> ou R$330,40 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/xsx3.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">WATCH DOGS LEGION - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$269,90 <br> 3x R$89,97 sem juros <br> ou R$256,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ml-4 mb-5">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/xsx4.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">FIFA 21 - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$349,90 <br> 3x R$116,63 sem juros <br> ou R$332,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/xsx5.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">STAR WARS SQUADRONS - XBOX ONE / XBOX ONE SERIES X</h5>
+                        <p class="card-text">R$229,90 <br> 3x R$76,63 sem juros <br> ou R$218,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/xsx6.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">ASSASSINS CREED VALHALLA - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$289,90 <br> 3x R$96,63 sem juros <br> ou R$275,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ml-4 mb-5">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/xsx7.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">JUST DANCE 2021 - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$269,90 <br> 3x R$89,97 sem juros <br> ou R$256,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <a href="form.html">
+                        <img class="card-img-top" src="img/xsx8.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">CALL OF DUTY BLACK OPS COLD WAR - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$331,90 <br> 3x R$110,63 sem juros <br> ou R$313,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="img/xsx9.jpg" style="height: 263px; width: 227px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">MASS EFFECT LEGENDARY EDITION - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$307,90 <br> 3x R$102,63 sem juros <br> ou R$299,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ml-4 mb-5">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <a href="form.html">
+                        <img class="card-img-top" src="https://images.tcdn.com.br/img/img_prod/906426/devil_may_cry_5_special_edition_xbox_series_x_12966_1_35020053b9ac224bea3b7fba0da8977d.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">DEVIL MAY CRY 5 SPECIAL EDITION - XBOX SERIES X</h5>
+                        <p class="card-text">R$322,90<br> 3x R$107,63 sem juros <br> ou R$310,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="https://images.tcdn.com.br/img/img_prod/906426/mortal_kombat_11_ultimate_xbox_series_x_12617_1_7987eb29ce12cbab504bc24431ff388e.jpg" style="height: 287px; width: 227px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">MORTAL KOMBAT 11 ULTIMATE - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$356,90 <br> 3x R$118,96 sem juros <br> ou R$340,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;"><br>
+                    <center>
+                        <a href="form.html">
+                            <img class="card-img-top" src="img/xsx10.jpg" style="height: 285px; width: 227px;" alt="Imagem de capa do card">
+                        </a>
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">OUTRIDERS - XBOX ONE / XBOX SERIES X</h5>
+                        <p class="card-text">R$269,90 <br> 3x R$89,96 sem juros <br> ou R$252,41 no Boleto</p>
+                        <a href="form.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar fixed-bottom navbar-dark" style="background-color: #282828; height: 40px;">
+        <div id="iconesrodape" style="float: left; margin-left: 30px;">
+            <a href="https://web.whatsapp.com/send?phone=5511942528100" target="blank">
+                <i id="irodape1" class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#">
+                <i id="irodape2" class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:matheusmarqsilva@gmail.com" target="blank">
+                <i id="irodape3" class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <a href="javascript:void(0)" onclick="rolar('#rodape')"><i style="font-size: 25px;
+            color: whitesmoke; margin-left: -635px;" class="fas fa-arrow-down"></i></a>
+    </nav>
+
+    <nav id="rodape" class="navbar navbar-dark" style="background-color:#282828; height: 300px;">
+        <img id="logorodape" src="img/logorodape.png">
+
+        <div id="textorodape">
+            <p>Nós aqui da MMS Games, desenvolvemos esse website com o intuito de vender games novos e seminovos para o Brasil inteiro, sempre com os melhores preços do mercado</p>
+        </div>
+        <div style="background-color: #282828; width: 400px;">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" style="color: white; margin-bottom: 20px; font-family: 'Montserrat';">Inscreva-se aqui para receber e-mails sempre que houver promoções ou lançamentos de games aqui no site!</label>
+                    <input type="email" class="form-control" style="width: 350px;" id="mail" aria-describedby="emailHelp" placeholder="Seu email" required>
+                    <button type="submit" onclick="inscrever()" class="btn" style="width: 350px; margin-top: 20px; background-color: #181818; color: white;">Inscrever</button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
